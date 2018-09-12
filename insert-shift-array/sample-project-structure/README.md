@@ -1,22 +1,5 @@
-# Node-Ecosystem
+# Insert Shift Array
 
-A project for solidifying our knowledge of how to use node to test our code.
+## Challenge
 
-## Getting Started
-
-### Prerequisites
-
-You will need to use npm to install eslint and jest
-
-### Built With
-
-JavaScript
-Node
-
-### Author
-
-Kris Esvelt
-
-### License
-
-MIT
+Write a function that takes in an array and a value, and inserts the value into the middle of the array.
