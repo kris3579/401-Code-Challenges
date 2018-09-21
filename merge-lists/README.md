@@ -1,5 +1,5 @@
-# Insert Shift Array
+# Merge Linked Lists
 
 ## Challenge
 
-Write a function that takes in an array and a value, and inserts the value into the middle of the array.
+Write a function that takes zips two linked lists together in alternating order.
