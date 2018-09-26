@@ -5,7 +5,8 @@ class Stack {
         this._storage = [];
     }
     pop() {
-        this._storage.pop();
+        return this._storage.pop();
+
     }
 
     push(value) {
@@ -25,7 +26,7 @@ module.exports = class Queue {
 
     dequeue(){
         let poppedValue = this.stackB.pop();
-        if (!poppedValue) {
+        if (poppedValue) {
             return poppedValue;
         }
         while (true) {
@@ -36,6 +37,7 @@ module.exports = class Queue {
                 break;
             }
         }
-        return this.stackB.pop();
+        poppedValue = this.stackB.pop();
+        return poppedValue;
     }
 }
