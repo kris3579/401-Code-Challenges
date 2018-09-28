@@ -1,8 +1,8 @@
 'use strict';
 
-const insertions = require('../insertions');
+const InsertionsClass = require('../insertions');
 
-const insertionsTest = new insertionsClass();
+const insertionsTest = new InsertionsClass();
 
 describe('insertions.js', () => {
   test('Successful append', () => {
