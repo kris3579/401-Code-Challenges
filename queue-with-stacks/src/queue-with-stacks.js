@@ -15,16 +15,16 @@ class Stack {
 }
 
 module.exports = class Queue {
-    constructor(){
+    constructor() {
         this.stackA = new Stack();
         this.stackB = new Stack();
     }
 
-    enqueue(value){
+    enqueue(value) {
         this.stackA.push(value);
     }
 
-    dequeue(){
+    dequeue() {
         let poppedValue = this.stackB.pop();
         if (poppedValue) {
             return poppedValue;
