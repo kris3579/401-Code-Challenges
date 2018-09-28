@@ -1,8 +1,8 @@
-# Insert Shift Array
+# Fifo Animal Shelter
 
 ## Challenge
 
-Write a function that takes in an array and a value, and inserts the value into the middle of the array.
+Write a class that holds dogs and cats and operates using a first in first out approach. Implement the enqueue and dequeue methods.
 
 ## Travis
 
