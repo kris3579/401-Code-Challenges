@@ -2,54 +2,6 @@
 
 const Animal = require('./lib/animal-class');
 
-// class Stack {
-//   constructor() {
-//     this._storage = [];
-//     this.top = this[this._storage.length - 1];
-//   }
-//
-//   pop() {
-//     return this._storage.pop();
-//   }
-//
-//   push(value) {
-//     this._storage.push(value);
-//     this.top = this[this._storage.length - 1];
-//   }
-//
-//   peek() {
-//     return this.top;
-//   }
-// }
-
-// class Queue {
-//   constructor() {
-//     this.stackA = new Stack();
-//     this.stackB = new Stack();
-//   }
-//
-//   enqueue(value) {
-//     this.stackA.push(value);
-//   }
-//
-//   dequeue() {
-//     let poppedValue = this.stackB.pop();
-//     if (poppedValue) {
-//       return poppedValue;
-//     }
-//     while (true) {
-//       poppedValue = this.stackA.pop();
-//       if (poppedValue) {
-//         this.stackB.push(poppedValue);
-//       } else {
-//         break;
-//       }
-//     }
-//     poppedValue = this.stackB.pop();
-//     return poppedValue;
-//   }
-// }
-
 class Queue {
   constructor() {
     this._storage = [];
