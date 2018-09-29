@@ -2,50 +2,32 @@
 
 const Animal = require('./lib/animal-class');
 
-class Stack {
-  constructor() {
-    this._storage = [];
-    this.top = this[this._storage.length - 1];
-  }
-
-  pop() {
-    return this._storage.pop();
-  }
-
-  push(value) {
-    this._storage.push(value);
-  }
-
-  peek() {
-    return this.top;
-  }
-}
-
 class Queue {
   constructor() {
-    this.stackA = new Stack();
-    this.stackB = new Stack();
+    this._storage = [];
   }
 
   enqueue(value) {
-    this.stackA.push(value);
+    this._storage.push(value);
   }
 
   dequeue() {
-    let poppedValue = this.stackB.pop();
+    const poppedValue = this._storage.shift();
     if (poppedValue) {
       return poppedValue;
     }
-    while (true) {
-      poppedValue = this.stackA.pop();
-      if (poppedValue) {
-        this.stackB.push(poppedValue);
-      } else {
-        break;
+    return undefined;
+  }
+
+  peek() {
+    let finalIndex;
+    if (this._storage.length !== 0) {
+      for (let i = 0; i < this._storage.length; i++) {
+        finalIndex = i;
       }
+      return finalIndex;
     }
-    poppedValue = this.stackB.pop();
-    return poppedValue;
+    return undefined;
   }
 }
 
@@ -63,38 +45,38 @@ module.exports = class AnimalShelter {
     animal.queuePosition = this.counter;
     this.counter += 1;
     if (animal.species.toLowerCase() === 'cat') {
-      this.cats.stackA.push(animal);
+      this.cats.enqueue(animal);
     }
     if (animal.species.toLowerCase() === 'dog') {
-      this.dogs.stackA.push(animal);
+      this.dogs.enqueue(animal);
     }
     return null;
   }
 
   dequeue(pref) {
-    if (this.cats.stackB.peek() === undefined) {
-      console.log(this.cats.stackA.peek());
-      while (this.cats.stackA.peek() !== undefined) {
+    if (this.cats.peek() === undefined) {
+      console.log(this.cats.peek());
+      while (this.cats.peek() !== undefined) {
         console.log('here, while loop');
-        this.cats.stackA.pop();
+        this.cats.dequeue();
       }
     }
-    if (this.dogs.stackB.peek() === 'undefined') {
-      while (this.dogs.stackA.peek() !== 'undefined') {
-        this.dogs.stackA.pop();
+    if (this.dogs.peek() === 'undefined') {
+      while (this.dogs.peek() !== 'undefined') {
+        this.dogs.dequeue();
       }
     }
-    const catPeekQueuePosition = this.cats.stackB.peek();
-    const dogPeekQueuePosition = this.dogs.stackB.peek();
+    const catPeekQueuePosition = this.cats.peek();
+    const dogPeekQueuePosition = this.dogs.peek();
     if (pref === 'cat') {
-      return this.cats.stackB.pop();
+      return this.cats.dequeue();
     }
     if (pref === 'dog') {
-      return this.dogs.stackB.pop();
+      return this.dogs.dequeue();
     }
-    if (catPeekQueuePosition < dogPeekQueuePosition) {
-      return this.cats.stackB.pop();
+    if (catPeekQueuePosition < dogPeekQueuePosition || dogPeekQueuePosition === undefined) {
+      return this.cats.dequeue();
     } 
-    return this.dogs.stackB.pop();
+    return this.dogs.dequeue();
   }
 };
