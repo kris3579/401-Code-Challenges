@@ -30,12 +30,12 @@ describe('queue-with-stacks.js', () => {
   describe('enqueue tests', () => {
     test('Successful cat enqueue', () => {
       testShelter.enqueue(testCat);
-      const queueValue = testShelter.cats.stackA.pop();
+      const queueValue = testShelter.cats.dequeue();
       expect(queueValue).toEqual(testCat);
     });
     test('Successful dog enqueue', () => {
       testShelter.enqueue(testDog);
-      const queueValue = testShelter.dogs.stackA.pop();
+      const queueValue = testShelter.dogs.dequeue();
       expect(queueValue).toEqual(testDog);
     });
     test('Input other than an object', () => {
@@ -48,6 +48,18 @@ describe('queue-with-stacks.js', () => {
       testShelter.enqueue(testCat2);
       const dequeueValue = testShelter.dequeue();
       expect(dequeueValue).toEqual(testCat2);
+    });
+    test('Successful cat dequeue', () => {
+      testShelter.enqueue(testDog);
+      testShelter.enqueue(testCat);
+      const dequeueValue = testShelter.dequeue('cat');
+      expect(dequeueValue).toEqual(testCat);
+    });
+    test('Successful dog dequeue', () => {
+      testShelter.enqueue(testCat);
+      testShelter.enqueue(testDog);
+      const dequeueValue = testShelter.dequeue('dog');
+      expect(dequeueValue).toEqual(testDog);
     });
   });
 });
