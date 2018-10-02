@@ -1,0 +1,22 @@
+{
+  "name": "401-code-challenges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kris3579/401-Code-Challenges.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kris3579/401-Code-Challenges/issues"
+  },
+  "homepage": "https://github.com/kris3579/401-Code-Challenges#readme",
+  "dependencies": {
+    "jest": "^23.6.0"
+  }
+}

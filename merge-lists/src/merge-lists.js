@@ -27,7 +27,7 @@ module.exports = class LinkedList {
     let currentNodeLL1 = LL1.head;
     let currentNodeLL2 = LL2.head;
     let LL1EndNode = LL1.head;
-    while (LL1EndNode.next !== null) {
+    while (LL1EndNode.next) {
       LL1EndNode = LL1EndNode.next;
       counter += 1;
     }
