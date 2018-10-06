@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0b5e29c-7c40-4ff4-9f49-94a830650d8b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../fizz-buzz-tree/src/lib/binary-tree-class.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileTemplate/.eslintignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileTemplate/.eslintrc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileTemplate/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileTemplate/.idea/filetemplate.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileTemplate/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileTemplate/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileTemplate/__test__/reverseTheArray.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileTemplate/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileTemplate/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileTemplate/src/lib/reverseTheArray.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../merge-lists/src/__test__/merge-lists.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../merge-lists/src/__test__/merge-lists.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../merge-lists/src/merge-lists.js" beforeDir="false" afterPath="$PROJECT_DIR$/../merge-lists/src/merge-lists.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,17 +18,17 @@
     <session id="-211348716">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.0" value="3" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="1" />
-          <entry key="js" value="5" />
+          <entry key="js" value="6" />
           <entry key="json" value="1" />
           <entry key="md" value="1" />
         </counts>
@@ -48,13 +37,13 @@
         <counts>
           <entry key="IDEA_MODULE" value="1" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="5" />
+          <entry key="JavaScript" value="6" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="ESLintLanguageService" value="4" />
+          <entry key="ESLintLanguageService" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -82,11 +71,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lib/reverseTheArray.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/__test__/reverseTheArray.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -120,9 +118,9 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="730" />
-    <option name="y" value="97" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="799" />
+    <option name="y" value="303" />
     <option name="width" value="960" />
     <option name="height" value="768" />
   </component>
@@ -134,12 +132,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="array_reverse" type="b2602c69:ProjectViewProjectNode" />
               <item name="array_reverse" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="array_reverse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="array_reverse" type="462c0819:PsiDirectoryNode" />
+              <item name="__test__" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="array_reverse" type="b2602c69:ProjectViewProjectNode" />
@@ -156,12 +160,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fifo-animal-shelter" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="wsl://UBUNTU@/usr/bin/node" />
@@ -206,14 +209,16 @@
       <workItem from="1536854760067" duration="876000" />
       <workItem from="1536862553151" duration="76000" />
       <workItem from="1538496405120" duration="235000" />
+      <workItem from="1538611198722" duration="1107000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8318000" />
+    <option name="totallyTimeSpent" value="9425000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -260,7 +265,14 @@
     <entry file="file://$PROJECT_DIR$/src/lib/reverseTheArray.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__test__/reverseTheArray.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
